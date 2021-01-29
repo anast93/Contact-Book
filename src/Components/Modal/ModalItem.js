@@ -84,10 +84,7 @@ export const ModalItem = () => {
 
 	const saveChanges = (event, openContact) => {
 		const input = event.target.closest('.contact_active-wrap').querySelectorAll('input');
-		const newName = input[0].value,
-			newPhone = input[1].value,
-			newEmail = input[2].value,
-			newCompany = input[3].value;
+		const [{value: newName}, {value: newPhone}, {value: newEmail}, {value: newCompany}] = input;
 
 		let newContactsData = [...contactsData];
 
