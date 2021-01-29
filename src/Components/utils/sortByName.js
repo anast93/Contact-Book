@@ -1,0 +1,1 @@
+export const sortByName = arr => arr.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1);
